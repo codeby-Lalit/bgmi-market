@@ -3,7 +3,7 @@
 A serverless marketplace for buying & selling BGMI (Battlegrounds Mobile India) accounts.
 
 - **Backend** — Cloudflare Workers + D1 (SQLite), pure JavaScript
-- **Frontend** — Vanilla HTML / CSS / JS, deployed on Vercel from the separate [`bgmi-frontend`](https://github.com/l4kushwaha/bgmi-frontend) repo
+- **Frontend** — Vanilla HTML / CSS / JS, deployed on Vercel from the separate [`bgmi-frontend`](https://github.com/codeby-Lalit/bgmi-frontend) repo
 - **Payments** — Direct UPI (no gateway / no KYC). Buyer pays straight to the seller's UPI ID (or platform fallback), submits the UTR, admin verifies & releases escrow. 10% service charge.
 - **Auth** — JWT (access + refresh) with email OTP password reset
 
@@ -56,7 +56,7 @@ docs/                             architecture, API spec, security policies
 frontend/                         frontend source — IGNORED here, managed by bgmi-frontend repo
 ```
 
-> `frontend/` is its own git repo (`l4kushwaha/bgmi-frontend`) connected to Vercel.
+> `frontend/` is its own git repo (`codeby-Lalit/bgmi-frontend`) connected to Vercel.
 > Pushing there auto-deploys the site. This repo contains only the backend workers.
 
 ## Local development
